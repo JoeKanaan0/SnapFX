@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ar.midtermproject.controllers.SavedImagesController">
+    <Label fx:id="label" layoutX="261.0" layoutY="19.0" text="Saved Images" textFill="#0a2a3e">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+    </Label>
+    <ScrollPane fitToWidth="true" layoutX="25.0" layoutY="67.0" prefHeight="289.0" prefWidth="549.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="60.0">
+        <VBox prefWidth="549.0">
+            <FlowPane fx:id="flowPane" prefHeight="400.0" prefWidth="600.0" />
+
+            <Label fx:id="placeholder" text="No images found" visible="false" />
+        </VBox>
+    </ScrollPane>
+    <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="84.0" text="Back" />
+</AnchorPane>
